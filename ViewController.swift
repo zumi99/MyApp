@@ -15,6 +15,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var image1: UIImageView!
     
+    @IBOutlet weak var image2: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -48,7 +50,7 @@ class ViewController: UIViewController {
                     if let imageData = data {
                         let googleImage = UIImage(data: imageData)
                         print(googleImage!)
-                        //self.image1.image = googleImage
+                        self.image2.image = googleImage
                         
                     } else {
                         print("imageData error")
